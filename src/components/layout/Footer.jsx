@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 import LinkedInLogo from '../common/LinkedInLogo';
+import ParticlesBackground from '../common/ParticlesBackground';
 import { profileData } from '../../constants/profile';
 
 /**
@@ -8,8 +9,11 @@ import { profileData } from '../../constants/profile';
  */
 const Footer = () => {
     return (
-        <footer className="bg-slate-950 py-8 px-4 border-t border-white/10">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <footer className="bg-slate-950 py-8 px-4 border-t border-white/10 relative overflow-hidden">
+            {/* Particle animation background */}
+            <ParticlesBackground />
+
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
                 <p className="text-slate-400 text-sm">
                     © 2026 {profileData.logo}. Todos los derechos reservados.
                 </p>
