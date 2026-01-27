@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Send } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import LinkedInLogo from '../common/LinkedInLogo';
 import Section from '../common/Section';
 import Card from '../common/Card';
 import AnimatedElement from '../common/AnimatedElement';
@@ -38,9 +39,9 @@ const Contact = () => {
                                 href={profileData.contact.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-gradient-to-r from-primary to-accent px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center gap-2 text-white hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105"
+                                className="bg-[#0A66C2] hover:bg-[#004182] px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center gap-2 text-white hover:shadow-lg hover:shadow-[#0A66C2]/50 transition-all hover:scale-105"
                             >
-                                <Linkedin size={20} />
+                                <LinkedInLogo size={20} />
                                 LinkedIn
                             </a>
                         </div>

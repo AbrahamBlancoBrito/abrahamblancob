@@ -1,18 +1,32 @@
 import {
-    Cloud, Flame, Network, GitBranch, Server,
-    ShieldCheck, FileCode, CreditCard, Code2, Coffee, Terminal
+    Network, GitBranch, Server,
+    FileCode, CreditCard, Terminal
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Section from '../common/Section';
 import AnimatedElement from '../common/AnimatedElement';
 import { profileData } from '../../constants/profile';
+import GoogleCloudLogo from '../common/logos/GoogleCloudLogo';
+import FirebaseLogo from '../common/logos/FirebaseLogo';
+import PythonLogo from '../common/logos/PythonLogo';
+import JavaLogo from '../common/logos/JavaLogo';
+import PCILogo from '../common/logos/PCILogo';
 
 /**
  * Icon mapping for tech stack
  */
 const iconMap = {
-    Cloud, Flame, Network, GitBranch, Server,
-    ShieldCheck, FileCode, CreditCard, Code2, Coffee, Terminal
+    Cloud: GoogleCloudLogo,
+    Flame: FirebaseLogo,
+    Network,
+    GitBranch,
+    Server,
+    ShieldCheck: PCILogo,
+    FileCode,
+    CreditCard,
+    Code2: PythonLogo,
+    Coffee: JavaLogo,
+    Terminal
 };
 
 /**
@@ -52,15 +66,23 @@ const TechStack = () => {
                             <div className="space-y-4">
                                 {category.items.map((tech, index) => {
                                     const Icon = iconMap[tech.icon];
+                                    const isOfficialLogo = ['Cloud', 'Flame', 'Code2', 'Coffee', 'ShieldCheck'].includes(tech.icon);
+
                                     return (
                                         <motion.div
                                             key={index}
                                             whileHover={{ scale: 1.05, x: 5 }}
                                             className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all cursor-pointer group"
                                         >
-                                            <div className={`p-2 rounded-lg bg-gradient-to-r ${category.color}`}>
-                                                <Icon size={20} className="text-white" />
-                                            </div>
+                                            {isOfficialLogo ? (
+                                                <div className="p-2 rounded-lg bg-white/10">
+                                                    <Icon size={20} />
+                                                </div>
+                                            ) : (
+                                                <div className={`p-2 rounded-lg bg-gradient-to-r ${category.color}`}>
+                                                    <Icon size={20} className="text-white" />
+                                                </div>
+                                            )}
                                             <span className="text-slate-300 group-hover:text-white transition-colors">
                                                 {tech.name}
                                             </span>

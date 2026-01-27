@@ -14,7 +14,7 @@ export const profileData = {
             id: 1,
             title: "Gerente General",
             company: "Instituto Tecnológico Sitio Uno",
-            period: "2024 - Presente",
+            period: "2025",
             description: "Fundación del instituto y estrategia de marketing digital.",
             achievements: [
                 "Fundación y lanzamiento exitoso del instituto tecnológico",
@@ -26,24 +26,38 @@ export const profileData = {
             id: 2,
             title: "CTO (Chief Technology Officer)",
             company: "Sitio Uno Inc",
-            period: "2021 - 2024",
+            period: "2022 - 2024",
             description: "Reducción del 25% en costos operativos TI y reingeniería de microservicios.",
             achievements: [
                 "Reducción del 25% en costos operativos de infraestructura TI (GCP/Firebase)",
                 "Reingeniería completa de arquitectura de microservicios",
-                "Implementación de CI/CD y mejora en tiempo de deployment en 60%"
+                "Implementación de CI/CD y mejora en tiempo de deployment en 60%",
+                "Diseño de arquitectura cloud para desarrollo de múltiples aplicaciones móviles para mercados internacionales en markets de Android y iOS"
             ]
         },
         {
             id: 3,
             title: "Senior Developer",
             company: "Sitio Uno Inc",
-            period: "2018 - 2021",
+            period: "2018 - 2022",
             description: "Arquitectura financiera para Credicard con alta disponibilidad.",
             achievements: [
                 "Diseño e implementación de arquitectura financiera para Credicard",
                 "Garantía de alta disponibilidad (99.9% uptime)",
-                "Cumplimiento de estándares PCI-DSS e ISO8583"
+                "Cumplimiento de estándares PCI-DSS e ISO8583",
+                "Desarrollo de aplicaciones financieras en Android para Credicard"
+            ]
+        },
+        {
+            id: 4,
+            title: "Junior Developer",
+            company: "Sitio Uno Inc",
+            period: "2015 - 2018",
+            description: "Desarrollo de aplicaciones financieras para puntos de venta en entes transaccionales Credicard y Banesco.",
+            achievements: [
+                "Desarrollo de aplicaciones para puntos de venta (POS)",
+                "Integración con sistemas transaccionales de Credicard y Banesco",
+                "Implementación de protocolos de seguridad financiera"
             ]
         }
     ],

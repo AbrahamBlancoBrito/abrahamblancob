@@ -1,4 +1,5 @@
-import { Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import LinkedInLogo from '../common/LinkedInLogo';
 import { profileData } from '../../constants/profile';
 
 /**
@@ -10,7 +11,7 @@ const Footer = () => {
         <footer className="bg-slate-950 py-8 px-4 border-t border-white/10">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                 <p className="text-slate-400 text-sm">
-                    © 2025 {profileData.logo}. Todos los derechos reservados.
+                    © 2026 {profileData.logo}. Todos los derechos reservados.
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -18,10 +19,10 @@ const Footer = () => {
                         href={profileData.contact.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-400 hover:text-primary transition-colors"
+                        className="text-slate-400 hover:text-[#0A66C2] transition-colors"
                         aria-label="LinkedIn"
                     >
-                        <Linkedin size={20} />
+                        <LinkedInLogo size={20} />
                     </a>
                     <a
                         href={`mailto:${profileData.contact.email}`}
