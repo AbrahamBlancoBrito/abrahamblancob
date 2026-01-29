@@ -58,6 +58,47 @@ const Contact = () => {
                                 LinkedIn
                             </a>
                         </div>
+
+                        {/* CV Download Section */}
+                        <div className="mt-12 pt-12 border-t border-slate-700">
+                            <div className="flex items-center justify-center gap-3 mb-6">
+                                <Mail size={24} className="text-blue-400" />
+                                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                                    Descarga mi CV
+                                </h3>
+                            </div>
+
+                            <p className="text-slate-300 text-center mb-6">
+                                Obtén una copia completa de mi experiencia profesional y habilidades técnicas
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a
+                                    href="/cv/Abraham_Blanco_CV_ES.pdf"
+                                    download
+                                    className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-xl font-semibold text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3"
+                                >
+                                    <svg className="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                    <span>CV en Español</span>
+                                </a>
+                                <a
+                                    href="/cv/Abraham_Blanco_CV_EN.pdf"
+                                    download
+                                    className="group px-8 py-4 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 rounded-xl font-semibold text-white shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3"
+                                >
+                                    <svg className="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                    <span>CV in English</span>
+                                </a>
+                            </div>
+
+                            <p className="text-slate-400 text-sm text-center mt-6">
+                                Formato PDF • Actualizado Enero 2026
+                            </p>
+                        </div>
                     </Card>
                 </AnimatedElement>
             </div>
