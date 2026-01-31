@@ -1,3 +1,5 @@
+import gcpLogo from '/gcp-logo.png';
+
 /**
  * Official Google Cloud Platform Logo
  * Using official brand image
@@ -5,7 +7,7 @@
 const GoogleCloudLogo = ({ size = 24 }) => {
     return (
         <img
-            src="/gcp-logo.png"
+            src={gcpLogo}
             alt="Google Cloud Platform"
             width={size}
             height={size}
