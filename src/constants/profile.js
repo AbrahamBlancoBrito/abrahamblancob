@@ -13,6 +13,19 @@ const profileDataES = {
     experience: [
         {
             id: 1,
+            title: "Ingeniero de IA – Consultor Independiente",
+            company: "Startups Venezolanas",
+            period: "Marzo 2026 - Actualidad",
+            description: "Agentes de IA para el ciclo de vida del desarrollo de software y módulos de crédito digital para startups venezolanas.",
+            achievements: [
+                "Desarrollo de agentes de IA para el entorno de desarrollo de software de todo el departamento de tecnología, automatizando tareas de codificación, revisión y documentación a lo largo del ciclo de vida",
+                "Implementación de módulos de originación y lanzamiento de créditos dentro de la aplicación, habilitando la solicitud y aprobación de préstamos para los usuarios finales",
+                "Construcción de vistas y reportería de datos en el backoffice de la organización, dando visibilidad operativa y de negocio sobre la cartera de créditos y el comportamiento de los usuarios",
+                "Definición de estándares y buenas prácticas de adopción de IA asistida en el equipo de tecnología, acelerando los ciclos de entrega"
+            ]
+        },
+        {
+            id: 2,
             title: "Gerente General",
             company: "Instituto Tecnológico Sitio Uno",
             period: "2025",
@@ -24,7 +37,7 @@ const profileDataES = {
             ]
         },
         {
-            id: 2,
+            id: 3,
             title: "CTO (Chief Technology Officer)",
             company: "Sitio Uno Inc",
             period: "2022 - 2024",
@@ -37,7 +50,7 @@ const profileDataES = {
             ]
         },
         {
-            id: 3,
+            id: 4,
             title: "Senior Developer",
             company: "Sitio Uno Inc",
             period: "2018 - 2022",
@@ -50,7 +63,7 @@ const profileDataES = {
             ]
         },
         {
-            id: 4,
+            id: 5,
             title: "Junior Developer",
             company: "Sitio Uno Inc",
             period: "2015 - 2018",
@@ -144,6 +157,19 @@ const profileDataEN = {
     experience: [
         {
             id: 1,
+            title: "AI Engineer – Independent Consultant",
+            company: "Venezuelan Startups",
+            period: "March 2026 - Present",
+            description: "AI agents for the software development lifecycle and digital credit modules for Venezuelan startups.",
+            achievements: [
+                "Development of AI agents for the software development environment of the entire technology department, automating coding, review, and documentation tasks throughout the lifecycle",
+                "Implementation of credit origination and disbursement modules within the application, enabling loan requests and approvals for end users",
+                "Building data views and reporting in the organization's back office, providing operational and business visibility over the credit portfolio and user behavior",
+                "Definition of standards and best practices for AI-assisted adoption in the technology team, accelerating delivery cycles"
+            ]
+        },
+        {
+            id: 2,
             title: "General Manager",
             company: "Instituto Tecnológico Sitio Uno",
             period: "2025",
@@ -155,7 +181,7 @@ const profileDataEN = {
             ]
         },
         {
-            id: 2,
+            id: 3,
             title: "CTO (Chief Technology Officer)",
             company: "Sitio Uno Inc",
             period: "2022 - 2024",
@@ -168,7 +194,7 @@ const profileDataEN = {
             ]
         },
         {
-            id: 3,
+            id: 4,
             title: "Senior Developer",
             company: "Sitio Uno Inc",
             period: "2018 - 2022",
@@ -181,7 +207,7 @@ const profileDataEN = {
             ]
         },
         {
-            id: 4,
+            id: 5,
             title: "Junior Developer",
             company: "Sitio Uno Inc",
             period: "2015 - 2018",
